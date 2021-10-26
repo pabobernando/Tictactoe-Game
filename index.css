@@ -1,0 +1,61 @@
+body {
+  background-color: black;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 100px;
+  font-size: 50px;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+#kotak {
+  border: 1px solid red;
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin: auto;
+}
+
+#tombol1 {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+.depan {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transform: perspective(600px) rotateY(0deg);
+  border: 1px solid red;
+  backface-visibility: hidden;
+  transition: transform 1s linear 0s;
+}
+
+.belakang {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transform: perspective(600px) rotateY(180deg);
+  border: 3px solid black;
+  backface-visibility: hidden;
+  transition: transform 1s linear 0s;
+  font-size: 80px;
+  background-color: red;
+  color: white;
+}
